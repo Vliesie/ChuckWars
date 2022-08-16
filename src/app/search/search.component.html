@@ -1,0 +1,44 @@
+<section id="search" class="search  " style="background-image: url('assets/searchback.jpg')" >
+  <div class="layer"></div>
+   <div class="search-content">
+
+ 
+ <div class="container">
+  <h2 class="burst" style="margin-bottom: 0px;"><a>Search</a></h2>
+  <mat-progress-bar color="accent" mode="indeterminate" *ngIf="isBusy"></mat-progress-bar>
+
+  <div class="search-form mg-top-s">
+    <div class="container__item">
+      <form class="form">
+        <input id="name" #name type="text" class="form__field" placeholder="Search swAPI & chuckAPI" />
+        <button type="button" (click)="search(name.value)" class="btn btn--primary btn--inside uppercase">Send</button>
+      </form>
+    </div>
+    
+   
+  </div>
+   
+    <ng-container   *ngIf="showResults">
+      <div class="search-results">
+
+        <h4>Search Results:</h4>
+
+        <div class="search-result-content">
+      
+            <div class="circles">
+              <a class="close"></a><a class="minimize"></a><a class="maximize"></a>
+            </div>
+              <code>
+                <pre>
+                  {{searchResults |json}}
+                </pre>
+              </code>
+      
+      </div>
+    </div>
+    </ng-container>
+   </div>
+ </div>
+</section>
+
+

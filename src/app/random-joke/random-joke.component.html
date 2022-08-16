@@ -1,0 +1,14 @@
+
+  <div class="randomjoke" >
+    <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" > <!-- The URl they give with the IP doesnt have a asset sadly so Just adding it manually here-->
+    <h3> Joke ID: <span *ngFor="let x of randomjoke">{{x.id}} </span></h3>
+    <h2> The Joke:</h2>
+    <p> <span  *ngFor="let x of randomjoke">{{x.value}}</span> </p>
+    <button class="close-btn" mat-icon-button aria-label="close dialog" mat-dialog-close>
+      <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+
+  </div>
+
+
+

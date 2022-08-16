@@ -1,0 +1,12 @@
+<section id="categories" class="categories container mg-top-m">
+  <h2 class="burst"><a>Categories</a></h2>
+
+<main >
+  <h4 style="text-align:center;">List of Chuck Norris Joke Categories!</h4>
+  <ol class="gradient-list">
+    <li *ngFor="let cat of categories"><span style="font-weight:bolder">Name: </span><a class="cat-name"   (click)="getrandomJoke(cat.name)">{{cat.name}}</a></li>
+  </ol>
+</main>
+
+</section>
+

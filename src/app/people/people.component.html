@@ -1,0 +1,30 @@
+<section id="people" class="people  mg-top-m">
+  <div class="container">
+    <h2 class="burst"><a>People</a></h2>
+    <div class="content">
+      <ul class="tilesWrap">
+        <li *ngFor="let person of people; let i= index;">
+          <h2>{{i}}</h2>
+          <h3>{{person.name}}</h3>
+          <p>
+             Details:
+          </p>
+            <div class="details"> 
+              <p>Birth Year:<span >{{person.birth_year}}</span></p>
+              <p>Eye Color:<span > {{person.eye_color}}</span></p>
+              <p>Gender:<span >{{person.gender}}</span></p>
+              <p>Hair Color:<span >{{person.hair_color}}</span></p>
+              <p>Height:<span>{{person.height}}</span></p>
+              <p>Mass<span >{{person.mass}}</span></p>
+              <p>Skin Color<span >{{person.skin_color}}</span></p>
+            </div>
+        
+            <a target="_blank" href="{{person.url}}">  <button>Read more</button></a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    
+  </div>
+</section>

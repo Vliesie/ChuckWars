@@ -1,0 +1,39 @@
+.close-btn{
+  display: inline!important;
+    position: absolute!important;
+    top: 0!important;
+    right: 0!important;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.close-btn:focus-visible{
+  border: none!important;
+  outline: none!important;
+}
+
+.randomjoke{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.randomjoke img{
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+}
+
+
+
+.randomjoke p{
+  font-size:20px;
+}
+
+.mat-dialog-container{
+  padding:5px!important;
+}
